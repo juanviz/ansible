@@ -1,0 +1,4 @@
+- hosts: '{{host}}'
+  roles:
+    - { role: /Users/jvherrera/repositories/minecraft_ansible/yauh.java8, when: host != 'pi' }
+    - /Users/jvherrera/repositories/minecraft_ansible/minecraft
