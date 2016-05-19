@@ -27,7 +27,7 @@ ansible-playbook  -i inventory.yml -u ubuntu --sudo minecraft.yml  --extra-vars 
 License
 -------
 
-BSD
+GPL
 
 Author Information
 ------------------
