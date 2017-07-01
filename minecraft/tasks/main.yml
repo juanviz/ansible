@@ -18,7 +18,7 @@
   when: host == "pi"
 - copy: src=minecraft.jar dest=/opt/minecraft/minecraft.jar owner={{minecraft_user}} group={{minecraft_user}} mode=0755
   when: host == "pi"
-- copy: src={{minecraft_server}}.jar dest=/opt/minecraft/{{minecraft_server}}.jar owner={{minecraft_user}} group={{minecraft_user}} mode=0755
+- copy: src={{minecraft_server}} dest=/opt/minecraft/{{minecraft_server}} owner={{minecraft_user}} group={{minecraft_user}} mode=0755
   when: host != "pi" 
 - file: path=/opt/minecraft/logs state=directory owner={{minecraft_user}} group=syslog mode=0775 recurse=yes
   when: host != "pi" 
